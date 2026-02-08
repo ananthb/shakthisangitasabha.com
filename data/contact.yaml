@@ -1,14 +1,14 @@
 email:
-- shakthisangitasabha@gmail.com
-- enquiry@shakthipalace.com
+  - shakthisangitasabha@gmail.com
+  - enquiry@shakthipalace.com
 whatsapp:
-- '+919445525825'
-- '+919840503289'
+  - "+919445525825"
+  - "+919840503289"
 phone:
-- '+91 94455 25825'
-- '+91 98405 03289'
-- '044 2486 2825'
-- '044 4768 2825'
+  - "+91 94455 25825"
+  - "+91 98405 03289"
+  - "044 2486 2825"
+  - "044 4768 2825"
 businessName: "Shakthi Sangita Sabha"
 address: |
   64-65, Anbu Nagar 10th St,
@@ -21,4 +21,4 @@ socials:
   justdial.com: "https://www.justdial.com/Chennai/Shakthi-Palace-Ac-Kalyana-Mandapam-Arcot-Road-Opposite-To-Mega-Mart-Sridevi-Kuppam-Main-Road-Valasaravakkam/044PXX44-XX44-181212141730-P4Z3_BZDET"
   shakthipalace.com: "https://shakthipalace.com"
 map:
-  iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7210994753477!2d80.17705061482287!3d13.053416490802203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261659c199f63%3A0x3f6b3094618119b1!2sShakthi%20Palace%20AC%20-%20Kalyana%20Mandapam%2C%20Auditorium%20(Shakthi%20Sangita%20Sabha)%20and%20Mini%20hall!5e0!3m2!1sen!2sin!4v1631973474679!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
+  iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7187210648926!2d80.17673757550676!3d13.053567713075026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261006dc74c35%3A0x7fd817ec49a2ded0!2sShakthi%20Sangita%20Sabha!5e0!3m2!1sen!2sin!4v1770573853105!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
