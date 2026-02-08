@@ -1,0 +1,58 @@
+languageCode = "en-in"
+title = "Shakthi Sangita Sabha"
+enableGitInfo = true
+enableRobotsTXT = true
+theme = "github.com/ananthb/mandapam-theme"
+
+[module]
+[[module.imports]]
+path = "github.com/ananthb/mandapam-theme"
+
+[build.buildStats]
+enable = true
+
+[params]
+github_repository = "ananthb/shakthisangitasabha.com"
+logo = "logos/shakthi-sangita-sabha-logo.jpg"
+tagline = "A Premier Venue for Carnatic Music & Classical Dance"
+services_heading = "Our Offerings"
+
+[params.homepage_meta_tags]
+meta_description = """
+Shakthi Sangita Sabha is Chennai's premier venue for Carnatic music kutcheris, \
+Bharatanatyam arangetrams, classical dance performances, and cultural events. \
+Located in Valasaravakkam with excellent acoustics, Hi-Fi audio systems, \
+HD video recording, and live streaming facilities. Perfect for Margazhi season concerts, \
+music school annual days, and all classical arts performances."""
+meta_og_title = "Shakthi Sangita Sabha - Premier Carnatic Music & Dance Venue"
+meta_og_type = "website"
+meta_og_url = "https://shakthisangitasabha.com"
+meta_og_image = "https://shakthisangitasabha.com/logos/shakthi-sangita-sabha-logo.jpg"
+meta_og_description = """
+Shakthi Sangita Sabha is Chennai's premier venue for Carnatic music kutcheris, \
+Bharatanatyam arangetrams, classical dance performances, and cultural events. \
+Located in Valasaravakkam with excellent acoustics, Hi-Fi audio systems, \
+HD video recording, and live streaming facilities."""
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Notable Events"
+url = "/events/"
+weight = 2
+
+[[menu.main]]
+name = "Contact Us"
+url = "/contact/"
+weight = 3
+
+[permalinks]
+events = "/events/:slug/"
+gallery = "/events/:slug/"
+
+[imaging.exif]
+includeFields = ""
+disableLatLong = true

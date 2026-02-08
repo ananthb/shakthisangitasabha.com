@@ -1,0 +1,30 @@
+{
+  "name": "shakthisangitasabha.com",
+  "version": "1.0.0",
+  "description": "Shakthi Sangita Sabha Website - Premier Carnatic Music & Dance Venue",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ananthb/shakthisangitasabha.com.git"
+  },
+  "keywords": [
+    "hugo",
+    "carnatic",
+    "music",
+    "dance",
+    "sabha"
+  ],
+  "author": "Ananth Bhaskararaman <antsub@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ananthb/shakthisangitasabha.com/issues"
+  },
+  "homepage": "https://github.com/ananthb/shakthisangitasabha.com#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "cssnano": "^6.1.1",
+    "postcss": "^8.4.37",
+    "postcss-cli": "^11.0.0"
+  },
+  "dependencies": {}
+}
