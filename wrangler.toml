@@ -1,5 +1,7 @@
 name = "shakthisangitasabha-com"
 compatibility_date = "2026-02-08"
+workers_dev = false
+preview_urls = false
 
 [observability]
 enabled = false
@@ -17,7 +19,7 @@ persist = true
 head_sampling_rate = 1
 
 [build]
-command = "curl -L https://github.com/gohugoio/hugo/releases/download/v0.145.0/hugo_extended_0.145.0_linux-amd64.tar.gz | tar xz && npm install && ./hugo --minify"
+command = "npm install && npm run build"
 
 [assets]
 directory = "./public"
