@@ -1,7 +1,5 @@
 name = "shakthisangitasabha"
-pages_build_output_dir = "public"
-compatibility_date = "2023-11-04"
+compatibility_date = "2026-02-08"
 
-[env.production.vars]
-ARGS = "--minify --baseURL https://shakthisangitasabha.com"
-HUGO_VERSION = "0.145.0"
+[assets]
+directory = "./public"

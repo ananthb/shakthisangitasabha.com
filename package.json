@@ -20,6 +20,10 @@
     "url": "https://github.com/ananthb/shakthisangitasabha.com/issues"
   },
   "homepage": "https://github.com/ananthb/shakthisangitasabha.com#readme",
+  "scripts": {
+    "build": "hugo --minify",
+    "deploy": "npm run build && npx wrangler deploy"
+  },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "cssnano": "^6.1.1",
