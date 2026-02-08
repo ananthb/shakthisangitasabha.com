@@ -2,7 +2,7 @@ name = "shakthisangitasabha"
 compatibility_date = "2026-02-08"
 
 [build]
-command = "hugo --minify"
+command = "npm install && npm run build"
 
 [assets]
 directory = "./public"
