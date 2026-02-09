@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ananthb/shakthisangitasabha.com#readme",
   "scripts": {
-    "build": "hugo --minify",
+    "build": "hugo && hugo --minify --environment production",
     "deploy": "npm run build && npx wrangler deploy"
   },
   "devDependencies": {
