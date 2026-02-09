@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ananthb/shakthisangitasabha.com#readme",
   "scripts": {
-    "build": "hugo-extended && hugo-extended --minify",
+    "build": "hugo --minify",
     "deploy": "npm run build && npx wrangler deploy"
   },
   "devDependencies": {
@@ -30,9 +30,5 @@
     "hugo-extended": "^0.145.0",
     "postcss": "^8.4.37",
     "postcss-cli": "^11.0.0"
-  },
-  "dependencies": {},
-  "trustedDependencies": [
-    "hugo-extended"
-  ]
+  }
 }
