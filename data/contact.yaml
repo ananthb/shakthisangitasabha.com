@@ -24,5 +24,3 @@ calendar:
   book_url: "https://concierge.kedi.dev/book/46faf4ff-5bb5-4889-b51a-1eac2b2f905a/keen-wren-tlk"
   view_title: "Event Calendar"
   booking_title: "Book Your Event"
-  booking_enabled: true
-  default_view: "month"
