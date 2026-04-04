@@ -8,9 +8,6 @@ theme = "github.com/ananthb/mandapam-theme"
 [[module.imports]]
 path = "github.com/ananthb/mandapam-theme"
 
-[build.buildStats]
-enable = true
-
 [params]
 github_repository = "ananthb/shakthisangitasabha.com"
 logo = "logos/shakthi-sangita-sabha-logo.jpg"

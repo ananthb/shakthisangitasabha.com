@@ -6,3 +6,5 @@ github.com/ananthb/mandapam-theme v0.10.19 h1:VuvnmTgtSlNRxg9DmzAfqCWBrbF2SkPWi9
 github.com/ananthb/mandapam-theme v0.10.19/go.mod h1:nz3Tp+DaGHM93GkWkW4H2O1Wie90AKaJ7G47ysUNs0Q=
 github.com/ananthb/mandapam-theme v0.10.20 h1:YUh7ti+p2G96GWOzsHbv5xz/iV/M99yAdILUS20ttZY=
 github.com/ananthb/mandapam-theme v0.10.20/go.mod h1:nz3Tp+DaGHM93GkWkW4H2O1Wie90AKaJ7G47ysUNs0Q=
+github.com/ananthb/mandapam-theme v0.11.0 h1:mRcDqzCnsl5PXqrA5abTRcqTFR9ktLPCnZdyyi9+YTo=
+github.com/ananthb/mandapam-theme v0.11.0/go.mod h1:nz3Tp+DaGHM93GkWkW4H2O1Wie90AKaJ7G47ysUNs0Q=
