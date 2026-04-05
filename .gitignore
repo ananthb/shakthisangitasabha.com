@@ -22,3 +22,6 @@ Thumbs.db
 
 # Build
 /dist/
+
+# cachix/git-hooks.nix
+.pre-commit-config.yaml
