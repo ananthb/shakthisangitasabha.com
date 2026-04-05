@@ -1,8 +1,9 @@
 name = "shakthisangitasabha-com"
+pages_build_output_dir = "public"
 compatibility_date = "2026-02-08"
 
 [build]
 command = "hugo build --gc --minify ${HUGO_EXTRA_FLAGS:-}"
 
-[assets]
-directory = "./public"
+[build.environment]
+HUGO_VERSION = "0.147.6"
