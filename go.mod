@@ -2,4 +2,4 @@ module github.com/ananthb/shakthisangitasabha.com
 
 go 1.25.5
 
-require github.com/ananthb/mandapam-theme v0.12.1 // indirect
+require github.com/ananthb/mandapam-theme v0.12.3 // indirect

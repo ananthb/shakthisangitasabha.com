@@ -12,3 +12,5 @@ github.com/ananthb/mandapam-theme v0.12.0 h1:JOgJIKSKOpZHkt71mTkT+BPDLXeyD7/b3HI
 github.com/ananthb/mandapam-theme v0.12.0/go.mod h1:nz3Tp+DaGHM93GkWkW4H2O1Wie90AKaJ7G47ysUNs0Q=
 github.com/ananthb/mandapam-theme v0.12.1 h1:YWexk8Iw7UG7kh6/j2FUtbjzqL4vt6VqrYZ0I47WlmA=
 github.com/ananthb/mandapam-theme v0.12.1/go.mod h1:nz3Tp+DaGHM93GkWkW4H2O1Wie90AKaJ7G47ysUNs0Q=
+github.com/ananthb/mandapam-theme v0.12.3 h1:TFpk7QULj1H8/LTVMS6yIQbrliMDCluKkAUIbn0sBFM=
+github.com/ananthb/mandapam-theme v0.12.3/go.mod h1:nz3Tp+DaGHM93GkWkW4H2O1Wie90AKaJ7G47ysUNs0Q=
