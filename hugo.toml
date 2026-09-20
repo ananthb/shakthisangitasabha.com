@@ -27,6 +27,12 @@ moments_all = "All events"
 upcoming_kicker = "Coming up"
 upcoming_heading = "Upcoming programmes"
 
+# A deeper maroon than the theme default.
+[params.theme]
+primary = "#5e0713"
+primary_deep = "#2b050b"
+accent = "#c9a227"
+
 [[params.facts]]
 value = "150"
 label = "theatre seats"
