@@ -1,6 +1,6 @@
 +++
-type = 'gallery'
 date = '2024-01-15T18:30:00Z'
+aliases = ['/events/auditorium-gallery/']
 images = ['/images/shakthi-sangita-sabha-auditorium-front.jpg', '/images/auditorium-angled.jpg', '/images/auditorium.jpg', '/images/sabha.jpg', '/images/shathi-sangita-sabha-auditorium01.jpg', '/images/shathi-sangita-sabha-auditorium02.jpg', '/images/vinayagar-temple.jpg']
 thumbnail = '/images/sabha.jpg'
 title = 'The Auditorium'

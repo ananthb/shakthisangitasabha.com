@@ -2,7 +2,7 @@
 title: 'Cultural Events'
 weight: 3
 icon: 'festival'
-link: 'contact'
+link: '/#contact'
 ---
 
 - Namasankeerthanam

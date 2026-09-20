@@ -2,7 +2,7 @@
 title: 'Classical Dance Performances'
 weight: 2
 icon: 'self_improvement'
-link: 'contact'
+link: '/#contact'
 ---
 
 - Wide stage with LED focus lights

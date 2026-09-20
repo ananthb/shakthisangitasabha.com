@@ -2,7 +2,7 @@
 title: 'Carnatic Music Kutcheris'
 weight: 1
 icon: 'music_note'
-link: 'contact'
+link: '/#contact'
 ---
 
 - Precision-engineered acoustics
