@@ -1,0 +1,131 @@
+# Sveltia CMS. Served at https://shakthisangitasabha.com/admin/, signs in
+# through calculon.tech, the forge (which signs in through Vault), and commits
+# to main.
+backend:
+  name: gitea
+  repo: ananthb/shakthisangitasabha.com
+  branch: main
+  base_url: https://calculon.tech
+  api_root: https://calculon.tech/api/v1
+  # Client id of the public OAuth2 app declared in calculon-tech/platform,
+  # tf/forgejo/sites.tf (output sveltia_app_ids).
+  app_id: 555eabe7-25d7-4d25-8741-10538747aafb
+  # Vault is the only door: no personal-access-token sign-in.
+  auth_methods: [oauth]
+
+site_url: https://shakthisangitasabha.com
+display_url: https://shakthisangitasabha.com
+
+# Hugo page resources: the theme reads images from assets/ and front matter
+# refers to them without a leading slash.
+media_folder: assets/images
+public_folder: images
+
+# Photos are resized on the way in, so phone originals never reach the repo.
+media_libraries:
+  default:
+    config:
+      max_file_size: 20000000
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1600
+          height: 1600
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: home
+    label: Home page
+    files:
+      - name: home
+        label: Home page
+        file: content/_index.md
+        format: toml-frontmatter
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: heroHeading, label: Hero heading, widget: string }
+          - { name: heroSubheading, label: Hero subheading, widget: text }
+          - { name: heroLeftBackground, label: Hero left image, widget: image }
+          - { name: heroRightBackground, label: Hero right image, widget: image }
+          - { name: body, label: Body, widget: markdown, required: false }
+
+  - name: events
+    label: Events
+    label_singular: Event
+    description: A programme on our stage. Give it a date in the future and it lists under "Coming up"; add photos afterwards and it becomes a memory.
+    folder: content/events
+    path: "{{year}}/{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    extension: md
+    format: toml-frontmatter
+    create: true
+    preview_path: "/events/{{year}}/{{slug}}/"
+    summary: "{{date | date('D MMM YYYY')}} · {{title}}"
+    thumbnail: cover
+    sortable_fields:
+      fields: [date, title]
+      default: { field: date, direction: descending }
+    fields:
+      - { name: title, label: Programme, widget: string, hint: "e.g. Vocal kutcheri by …" }
+      - { name: date, label: Date, widget: datetime, time_format: false, default: "{{now}}" }
+      - { name: time, label: Starts at, widget: string, required: false, hint: "6.30 pm" }
+      - { name: artists, label: Artists, widget: list, required: false, hint: "One per line" }
+      - { name: entry, label: Entry, widget: select, required: false, options: [Free entry, Tickets, Invitation] }
+      - { name: booking, label: Booking link, widget: string, required: false, hint: "A URL, shown as a button" }
+      - { name: cover, label: Cover photo, widget: image, required: false }
+      - { name: photos, label: Photos, widget: image, multiple: true, max: 80, required: false }
+      - { name: body, label: About the programme, widget: markdown, required: false, minimal: true }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false }
+      # Older entries keep their photos under assets/images; never shown for new ones.
+      - { name: images, widget: hidden, required: false }
+      - { name: thumbnail, widget: hidden, required: false }
+      - { name: aliases, widget: hidden, required: false }
+
+  - name: homepage
+    label: Home page strips
+    label_singular: Strip
+    folder: content/homepage
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    slug: "{{slug}}"
+    filter: { field: headless, value: null }
+    sortable_fields:
+      fields: [weight, title]
+      default: { field: weight, direction: ascending }
+    fields:
+      # The filter above hides the section's own index.md (headless: true);
+      # Sveltia wants the field declared to filter on it. Hidden: never edited.
+      - { name: headless, widget: hidden, required: false }
+      - { name: title, label: Title, widget: string }
+      - { name: weight, label: Order, widget: number, value_type: int }
+      - { name: background, label: Background image, widget: image }
+      - { name: button, label: Button text, widget: string, required: false }
+      - { name: buttonLink, label: Button link, widget: string, required: false, hint: "A path on this site (/events/) or a full URL" }
+      - { name: body, label: Text, widget: markdown }
+
+  - name: services
+    label: What we host
+    label_singular: Card
+    folder: content/services
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    slug: "{{slug}}"
+    filter: { field: headless, value: null }
+    sortable_fields:
+      fields: [weight, title]
+      default: { field: weight, direction: ascending }
+    fields:
+      - { name: headless, widget: hidden, required: false }
+      - { name: title, label: Title, widget: string }
+      - { name: weight, label: Order, widget: number, value_type: int }
+      - { name: icon, label: Icon, widget: select, required: false, options: [music_note, self_improvement, festival, celebration, event, groups, spa, favorite] }
+      - { name: link, label: Link, widget: string, required: false, hint: "A path on this site or a full URL" }
+      - { name: body, label: Text, widget: markdown, hint: "A bullet list works best" }
